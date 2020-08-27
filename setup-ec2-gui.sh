@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'korea123!!' | passwd --stdin ubuntu
+echo -e "korea123!!" | passwd ubuntu
 
 sudo apt-get update
 sudo apt-get install -y ubuntu-desktop xrdp curl gnupg apt-transport-https
