@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo 'ubuntu:korea123!!' | chpasswd
+#echo 'ubuntu:korea123!!' | chpasswd
+sudo -S sh -c 'echo "ubuntu:korea123!!" | chpasswd'
 
 sudo apt-get update
 sudo apt-get install -y ubuntu-desktop xrdp curl gnupg apt-transport-https
