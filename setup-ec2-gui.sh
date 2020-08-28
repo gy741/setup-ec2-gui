@@ -9,4 +9,5 @@ curl -L https://packagecloud.io/firstlookmedia/code/gpgkey | sudo apt-key add -
 
 sudo apt-get update
 sudo apt-get install -y ubuntu-desktop xrdp curl gnupg apt-transport-https dangerzone
+pip install Flask
 
