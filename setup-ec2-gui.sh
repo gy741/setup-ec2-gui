@@ -8,6 +8,7 @@ echo "deb https://packagecloud.io/firstlookmedia/code/ubuntu/ bionic main" | sud
 curl -L https://packagecloud.io/firstlookmedia/code/gpgkey | sudo apt-key add -
 
 sudo apt-get update
-sudo apt-get install -y ubuntu-desktop xrdp curl gnupg apt-transport-https dangerzone
-pip install Flask
-
+sudo apt-get install -y ubuntu-desktop xrdp curl gnupg apt-transport-https dangerzone python3 python3-pip
+pip3 install Flask
+mkdir -p /tmp/dangerzone-pixel
+mkdir -p /tmp/dangerzone-safe
