@@ -2,7 +2,6 @@
 
 #echo 'ubuntu:korea123!!' | chpasswd
 sudo -S sh -c 'echo "ubuntu:korea123!!" | chpasswd'
-sudo usermod -aG docker ubuntu
 
 echo "deb https://packagecloud.io/firstlookmedia/code/ubuntu/ bionic main" | sudo tee -a /etc/apt/sources.list.d/firstlookmedia_code.list
 curl -L https://packagecloud.io/firstlookmedia/code/gpgkey | sudo apt-key add -
@@ -12,3 +11,9 @@ sudo apt-get install -y ubuntu-desktop xrdp curl gnupg apt-transport-https dange
 pip3 install Flask
 mkdir -p /tmp/dangerzone-pixel
 mkdir -p /tmp/dangerzone-safe
+
+sudo usermod -aG docker ubuntu
+sudo chmod 666 /var/run/docker.sock
+sudo systemctl daemon-reload
+sudo systemctl start docker
+sudo systemctl enable docker
