@@ -17,3 +17,4 @@ sudo chmod 666 /var/run/docker.sock
 sudo systemctl daemon-reload
 sudo systemctl start docker
 sudo systemctl enable docker
+/usr/bin/docker pull flmcode/dangerzone
